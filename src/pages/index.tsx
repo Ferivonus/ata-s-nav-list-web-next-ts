@@ -115,15 +115,15 @@ const res = await fetch(`/api/exams/${encodeURIComponent(courseCodeInput.trim())
               <tbody>
                 {exams.map((exam, index) => (
                   <tr key={index} className="odd:bg-white even:bg-gray-50">
-                    <td className="border px-3 py-2 text-gray-500">{exam.date}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.day}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.time}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.course_code}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.academic_staff}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.group}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.students}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.exam_type}</td>
-                    <td className="border px-3 py-2 text-gray-500">{exam.classroom}</td>
+                    <td className="border px-3 py-2">{exam.date}</td>
+                    <td className="border px-3 py-2">{exam.day}</td>
+                    <td className="border px-3 py-2">{exam.time}</td>
+                    <td className="border px-3 py-2">{exam.course_code}</td>
+                    <td className="border px-3 py-2">{exam.academic_staff}</td>
+                    <td className="border px-3 py-2">{exam.group}</td>
+                    <td className="border px-3 py-2">{exam.students}</td>
+                    <td className="border px-3 py-2">{exam.exam_type}</td>
+                    <td className="border px-3 py-2">{exam.classroom}</td>
                   </tr>
                 ))}
               </tbody>
